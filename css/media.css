@@ -1,0 +1,120 @@
+@media screen and (max-width:1023px) {
+  .inner {width: 90%;}
+  #header .nav {display: none;}
+  #header .util {display: none;}
+  #header .menu-open .menu-panel {width: 50%; padding-left: 8rem;}
+
+  #visual .inner {padding-top: 20rem;}  
+  #visual .vis-img strong {font-size: 7.8201vw;}
+  #visual .vis-text {width: 67.2rem;}
+  #visual .vis-text .shop-link a {font-size: 1.564vw; height: 6.6471vw; width: 17.3998vw; line-height: 6.6471vw;}
+  #visual .vis-text .edition-text {}
+  #visual .vis-text .edition-text span {font-size: 1.564vw;}
+  #visual .vis-text .edition-text h3 {font-size: 2.3460vw;}
+  #visual .vis-text .edition-text p {font-size: 1.5640vw;}
+
+  .main .con .inner {padding: 7.8201vw 0;}
+  .main .con h2 {font-size: 3.9101vw;}
+
+  .main .category .title {display: block; margin-bottom: 3.9101vw;}
+  .main .category .title ul {width: 100%; margin-top: 3.9101vw;}
+  .main .category .product {display: block;}
+  .main .category .product ul {width: 100%; margin-left: 0;}
+  .main .category .product ul li {margin-top: 2.9326vw;}
+  .main .category .product ul li .product-img {height: 21.5rem;}
+  .main .category .product ul li .product-img img {height: 100%;}
+  .main .category .product ul li h3 {font-size: 1.5640vw;}
+  .main .category .product ul li .explain {font-size: 1.3685vw;}
+  .main .category .product ul li .price {font-size: 1.7595vw;}
+  .main .category .product ul li .price .vol {font-size: 1.5640vw;}
+
+  .main .brand .bg-text {font-size: 6.8426vw; margin-bottom: 1.955vw;}
+  .main .brand .bg-text p:nth-of-type(2) {text-indent: 41.0557vw;}
+  .main .brand .brand-box span {display: none;}
+  .main .brand .brand-box video {width: 58%;}
+  .main .brand .brand-box .brand-text p {font-size: 1.5640vw;}
+
+  .main .collection .inner {width: 100%;}
+  .main .collection .mask ul li a .color-bg {width: 34.2131vw; height: 45.9433vw; border-radius: 15.6403vw;}
+  .main .collection .mask ul li a .text {height: 9.7752vw;}
+  .main .collection .mask ul li a .text h3 {font-size: 2.4438vw;}
+  .main .collection .mask ul li a .text span {font-size: 1.5640vw;}
+  .main .collection .mask ul li a .text p {font-size: 1.7595vw;}
+  .main .collection .mask ul li button {width: 14.6628vw; height: 5.4741vw; border-radius: 2.5415vw; font-size: 1.5640vw;}
+
+  .main .promotion .inner {width: 100%;}
+  .main .promotion .common .promotion-text {padding: 0 9.7752vw; height: 19.5503vw;}
+  .main .promotion .common .promotion-text h3 {font-size: 2.4438vw;}
+  .main .promotion .common .promotion-text span {font-size: 1.7595vw;}
+  .main .promotion .common .promotion-text p {font-size: 1.5640vw;}
+  .main .promotion .common .promotion-text .more a { width: 28.3480vw; height: 5.4741vw; line-height: 5.4741vw; border-radius: 2.7370vw;}
+
+  #footer .f-top .f-customer ul li {font-size: 1.3685vw;}
+  #footer .f-top .f-accout {width: auto;}
+  #footer .f-top .f-accout ul li a {font-size: 1.3685vw;}
+  #footer .f-top .f-product {display: none;}
+  #footer .f-bottom {flex-direction: column; align-items: center; height: 19.5503vw;}
+  #footer .f-bottom .f-logo {order: 1;}
+  #footer .f-bottom div {width: 100%;}
+  #footer .f-bottom div p {justify-content: center; line-height: 2.5415vw;}
+  #footer .f-bottom p {font-size: 1.3685vw;}
+}
+
+@media screen and (max-width:767px) {
+  #header .inner {width: 95%; height: 16.9492vw;}
+  #header h1 img {height: 16.9492vw;}
+  #header .menu-open .menu-panel {width: 80%; font-size: 2rem; padding-left: 5rem;}
+  #header .menu-open .menu-panel .util-menu {font-size: 1.6rem;}
+
+  #visual .inner {width: 95%; padding-bottom: 4rem; padding-top: 27.3794vw;}
+  #visual .vis-img {width: 100%; margin-bottom: 4rem;}
+  #visual .vis-img img {width: 100%;}
+  #visual .vis-img strong {font-size: 10.4302vw; white-space: break-spaces; top: auto; bottom: 0; left: 1rem; transform: translate(0,0)}
+  #visual .vis-text {width: 100%; flex-direction: column-reverse; align-items: center; text-align: center;}
+  #visual .vis-text .shop-link a {width: 26.0756vw; height: 8.8657vw; font-size: 3.1291vw; line-height: 8.8657vw; margin-top: 2.0860vw;}
+  #visual .vis-text .edition-text {width: 100%;}
+  #visual .vis-text .edition-text span {font-size: 3.1291vw;}
+  #visual .vis-text .edition-text h3 {font-size: 5.2151vw;}
+  #visual .vis-text .edition-text p {font-size: 3.1291vw; width: 100%; white-space: normal; word-break: keep-all;}
+
+  .main .con .inner {padding: 13.0378vw 0; width: 95%;}
+  .main .con h2 {font-size: 5.8670vw;}
+  
+  .main .category .title ul li a {font-size: 3.1291vw;}
+  .main .category .product picture {display: none;}
+  .main .category .product ul li {width: 100%;}
+  .main .category .product ul li:nth-child(n+5) {display: none;}
+  .main .category .product ul li h3 {font-size: 3.1291vw;}
+  .main .category .product ul li .explain {font-size: 2.6076vw;}
+  .main .category .product ul li .price {font-size: 3.6506vw;}
+  .main .category .product ul li .price .vol {font-size: 2.6076vw;}
+
+  .main .brand .bg-text {display: none;}
+  .main .brand .brand-box video {width: 100%;}
+  .main .brand .brand-box .brand-text {width: 100%;}
+  .main .brand .brand-box .brand-text h2 {margin-top: 3.9113vw;}
+  .main .brand .brand-box .brand-text p {margin-top: 2.6076vw; font-size: 3.1291vw;}
+
+  .main .collection .mask ul li a .color-bg {width: 45.6323vw; height: 61.2777vw; border-radius: 20.8605vw;}
+  .main .collection .mask ul li:nth-child(odd) {margin-top: 0;}
+  .main .collection .mask ul li a .text {height: auto;}
+  .main .collection .mask ul li a .text h3 {font-size: 4.5632vw;}
+  .main .collection .mask ul li a .text span {font-size: 3.1291vw;}
+  .main .collection .mask ul li a .text p {font-size: 3.6506vw;}
+  .main .collection .mask ul li button {width: 19.5567vw; height: 7.3012vw; border-radius: 3.6506vw; font-size: 3.1291vw;}
+
+  .main .promotion .common {flex-direction: column; justify-content: space-between;}
+  .main .promotion .common .promotion-text {width: 100%; margin: 6.3532vw 0; height: 39.1134vw}
+  .main .promotion .common .promotion-text h3 {font-size: 4.5632vw;}
+  .main .promotion .common .promotion-text span {font-size: 3.1291vw;}
+  .main .promotion .common .promotion-text p {font-size: 3.1291vw; word-break: keep-all;}
+  .main .promotion .common .promotion-text .more a { width: 36.8488vw; height: 7.1156vw; line-height: 7.1156vw; border-radius: 3.5578vw;}
+
+  #footer .inner {width: 95%; padding: 7.0404vw 0;}
+  #footer .f-top {display: none;}
+  #footer .f-bottom {width: 100%; height: 100%;}
+  #footer .f-bottom div p {line-height: 5.2151vw;}
+  #footer .f-bottom p span::after {display: none;}
+  #footer .f-bottom p {line-height: 7.8227vw; font-size: 2.6076vw}
+
+}
