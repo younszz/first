@@ -132,7 +132,7 @@
                 <source srcset="images/category_1_1023w.png">
                 <img src="images/category_1.png" alt="Bath & Body">
               </picture>
-              <ul>
+              <ul id="bath_products">
                 <li>
                   <a href="#">
                     <span class="product-img"><img src="images/category_1_1.png" alt="바디스크럽 로즈티"></span>
@@ -173,14 +173,14 @@
                     <p class="price">50,000원<span class="vol">200ml</span></p>
                   </a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#">
                     <span class="product-img"><img src="images/category_1_6.png" alt="실키바디밀크 머스크"></span>
                     <h3>실키바디밀크 머스크</h3>
                     <p class="explain">로맨틱한 분위기를 연출해주는 고급스럽고 차분한 향</p>
                     <p class="price">50,000원<span class="vol">200ml</span></p>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -511,6 +511,38 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    let bath_products = [
+      {
+        'image':'images/category_1_6.png',
+        'alt': '실키바디밀크 머스크',
+        'name':'실키바디밀크',
+        'explanation': '로맨틱한 분위기를 연출해주는 고급스럽고 차분한 향',
+        'price': '50,000',
+        'size': '200',
+      },
+    ];
+    
+    function product_li(data) {
+      let li = `<li>
+                  <a href="#">
+                    <span class="product-img"><img src="${data.image}" alt="${data.alt}"></span>
+                    <h3>${data.name}</h3>
+                    <p class="explain">${data.explanation}</p>
+                    <p class="price">${data.price}원<span class="vol">${data.size}ml</span></p>
+                  </a>
+                </li>`;
+      return li;
+    }
+
+    lis = ''; 
+    for (let i = 0; i < bath_products.length; i++) {
+      let tmp_li = product_li(bath_products[i]);
+      lis += tmp_li;
+      $("#bath_product").append(lis);
+    }
+  </script> 
 </body>
 
 </html>
