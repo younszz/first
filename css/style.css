@@ -61,7 +61,9 @@
 
 .main .category .product {width: 100%; display: flex; justify-content: space-between;}
 .main .category .product picture {width: calc(43% - 3rem);}
-.main .category .product ul { display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; width: 57%;}
+.main .category .product section.on {display: block;}
+.main .category .product section {width: 57%; display: none;}
+.main .category .product ul { display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; width: 100%;}
 .main .category .product ul li {width: 30%;}
 .main .category .product ul li .product-img {background: #F9F4ED; display: block; width: 100%; height: 17.5rem; text-align: center;}
 .main .category .product ul li h3 {font-size: 1.6rem; margin-top: 3rem; margin-bottom: 0.6rem;}

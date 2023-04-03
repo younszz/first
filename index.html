@@ -117,10 +117,10 @@
             <div class="title">
               <h2>All Category</h2>
               <ul>
-                <li class="on"><a href="#">Bath &amp; Body</a></li>
-                <li><a href="#">Hand &amp; Foot</a></li>
-                <li><a href="#">Hair</a></li>
-                <li><a href="#">Face</a></li>
+                <li class="on" data-id="bath"><a href="#">Bath &amp; Body</a></li>
+                <li data-id="hand"><a href="#">Hand &amp; Foot</a></li>
+                <li data-id="hair"><a href="#">Hair</a></li>
+                <li data-id="face"><a href="#">Face</a></li>
                 <li><a href="#">Home &amp; Fragrance</a></li>
                 <li><a href="#">Scent</a></li>
                 <li><a href="#">Gift Set</a></li>
@@ -132,56 +132,18 @@
                 <source srcset="images/category_1_1023w.png">
                 <img src="images/category_1.png" alt="Bath & Body">
               </picture>
-              <ul id="bath_products">
-                <li>
-                  <a href="#">
-                    <span class="product-img"><img src="images/category_1_1.png" alt="바디스크럽 로즈티"></span>
-                    <h3>바디스크럽 로즈티</h3>
-                    <p class="explain">부드럽고 달콤한 장미로 만든 향긋한 차에서 나는 듯한 포근한 향</p>
-                    <p class="price">48,000원<span class="vol">320g</span></p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="product-img"><img src="images/category_1_2.png" alt="바디스크럽 시트러스블라썸"></span>
-                    <h3>바디스크럽 시트러스블라썸</h3>
-                    <p class="explain">화사하게 피어 난 풀향기와 신선한 풀향기의 풋풋한 향기가 조화로운 향</p>
-                    <p class="price">48,000원<span class="vol">320g</span></p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="product-img"><img src="images/category_1_3.png" alt="바디스크럽 화이트티"></span>
-                    <h3>바디스크럽 화이트티</h3>
-                    <p class="explain">차밭으로 스며드는 빛처럼 섬세하고 풍부한 향</p>
-                    <p class="price">70,000원<span class="vol">600g</span></p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="product-img"><img src="images/category_1_4.png" alt="샤워오일 자스민 (바디워시)"></span>
-                    <h3>샤워오일 자스민 (바디워시)</h3>
-                    <p class="explain">자스민의 은은한 꽃향기가 우아하면서도 향긋한 향</p>
-                    <p class="price">38,000원<span class="vol">300ml</span></p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="product-img"><img src="images/category_1_5.png" alt="리페어 바디크림 그린로즈"></span>
-                    <h3>리페어 바디크림 그린로즈</h3>
-                    <p class="explain">베르가못, 라임의 프레쉬한 시트러스향과 갓 피어난 로즈의 사랑스러운 향</p>
-                    <p class="price">50,000원<span class="vol">200ml</span></p>
-                  </a>
-                </li>
-                <!-- <li>
-                  <a href="#">
-                    <span class="product-img"><img src="images/category_1_6.png" alt="실키바디밀크 머스크"></span>
-                    <h3>실키바디밀크 머스크</h3>
-                    <p class="explain">로맨틱한 분위기를 연출해주는 고급스럽고 차분한 향</p>
-                    <p class="price">50,000원<span class="vol">200ml</span></p>
-                  </a>
-                </li> -->
-              </ul>
+              <section class="on" id="bath">
+                <ul id="bath_products"></ul>
+              </section>
+              <section id="hand">
+                <ul id="hand_products"></ul>
+              </section>
+              <section id="hair">
+                <ul id="hand_products"></ul>
+              </section>
+              <section id="face">
+                <ul id="hand_products"></ul>
+              </section>
             </div>
           </div>
         </div>
@@ -514,16 +476,209 @@
 
   <script type="text/javascript">
     let bath_products = [
-      {
-        'image':'images/category_1_6.png',
-        'alt': '실키바디밀크 머스크',
-        'name':'실키바디밀크',
-        'explanation': '로맨틱한 분위기를 연출해주는 고급스럽고 차분한 향',
-        'price': '50,000',
-        'size': '200',
-      },
+    {
+    'image': 'images/category_1_1.png',
+    'alt': '바디스크럽 로즈티',
+    'name': '바디스크럽 로즈티',
+    'explanation': '부드럽고 달콤한 장미로 만든 향긋한 차에서 나는 듯한 포근한 향',
+    'price': '48,000',
+    'size': '320',
+  },
+  {
+    'image': 'images/category_1_2.png',
+    'alt': '바디스크럽 시트러스블라썸',
+    'name': '바디스크럽 시트러스블라썸',
+    'explanation': '화사하게 피어 난 풀향기와 신선한 풀향기의 풋풋한 향기가 조화로운 향',
+    'price': '48,000',
+    'size': '320',
+  },
+  {
+    'image': 'images/category_1_3.png',
+    'alt': '바디스크럽 화이트티',
+    'name': '바디스크럽 화이트티',
+    'explanation': '차밭으로 스며드는 빛처럼 섬세하고 풍부한 향',
+    'price': '70,000',
+    'size': '600',
+  },
+  {
+    'image': 'images/category_1_4.png',
+    'alt': '샤워오일 자스민 (바디워시)',
+    'name': '샤워오일 자스민 (바디워시)',
+    'explanation': '자스민의 은은한 꽃향기가 우아하면서도 향긋한 향',
+    'price': '38,000',
+    'size': '300',
+  },
+  {
+    'image': 'images/category_1_5.png',
+    'alt': '리페어 바디크림 그린로즈',
+    'name': '리페어 바디크림 그린로즈',
+    'explanation': '베르가못, 라임의 프레쉬한 시트러스향과 갓 피어난 로즈의 사랑스러운 향',
+    'price': '50,000',
+    'size': '200',
+  },
+  {
+    'image': 'images/category_1_6.png',
+    'alt': '실키바디밀크 머스크',
+    'name': '실키바디밀크',
+    'explanation': '로맨틱한 분위기를 연출해주는 고급스럽고 차분한 향',
+    'price': '50,000',
+    'size': '200',
+  },
     ];
-    
+    let hand_products = [
+  {
+    'image': 'images/category_1_2.png',
+    'alt': '바디스크럽 로즈티',
+    'name': '바디스크럽 로즈티',
+    'explanation': '부드럽고 달콤한 장미로 만든 향긋한 차에서 나는 듯한 포근한 향',
+    'price': '48,000',
+    'size': '320',
+  },
+  {
+    'image': 'images/category_1_3.png',
+    'alt': '바디스크럽 시트러스블라썸',
+    'name': '바디스크럽 시트러스블라썸',
+    'explanation': '화사하게 피어 난 풀향기와 신선한 풀향기의 풋풋한 향기가 조화로운 향',
+    'price': '48,000',
+    'size': '320',
+  },
+  {
+    'image': 'images/category_1_3.png',
+    'alt': '바디스크럽 화이트티',
+    'name': '바디스크럽 화이트티',
+    'explanation': '차밭으로 스며드는 빛처럼 섬세하고 풍부한 향',
+    'price': '70,000',
+    'size': '600',
+  },
+  {
+    'image': 'images/category_1_4.png',
+    'alt': '샤워오일 자스민 (바디워시)',
+    'name': '샤워오일 자스민 (바디워시)',
+    'explanation': '자스민의 은은한 꽃향기가 우아하면서도 향긋한 향',
+    'price': '38,000',
+    'size': '300',
+  },
+  {
+    'image': 'images/category_1_5.png',
+    'alt': '리페어 바디크림 그린로즈',
+    'name': '리페어 바디크림 그린로즈',
+    'explanation': '베르가못, 라임의 프레쉬한 시트러스향과 갓 피어난 로즈의 사랑스러운 향',
+    'price': '50,000',
+    'size': '200',
+  },
+  {
+    'image': 'images/category_1_6.png',
+    'alt': '실키바디밀크 머스크',
+    'name': '실키바디밀크',
+    'explanation': '로맨틱한 분위기를 연출해주는 고급스럽고 차분한 향',
+    'price': '50,000',
+    'size': '200',
+  },
+];
+let hair_products = [
+  {
+    'image': 'images/category_1_3.png',
+    'alt': '바디스크럽 로즈티',
+    'name': '바디스크럽 로즈티',
+    'explanation': '부드럽고 달콤한 장미로 만든 향긋한 차에서 나는 듯한 포근한 향',
+    'price': '48,000',
+    'size': '320',
+  },
+  {
+    'image': 'images/category_1_3.png',
+    'alt': '바디스크럽 시트러스블라썸',
+    'name': '바디스크럽 시트러스블라썸',
+    'explanation': '화사하게 피어 난 풀향기와 신선한 풀향기의 풋풋한 향기가 조화로운 향',
+    'price': '48,000',
+    'size': '320',
+  },
+  {
+    'image': 'images/category_1_3.png',
+    'alt': '바디스크럽 화이트티',
+    'name': '바디스크럽 화이트티',
+    'explanation': '차밭으로 스며드는 빛처럼 섬세하고 풍부한 향',
+    'price': '70,000',
+    'size': '600',
+  },
+  {
+    'image': 'images/category_1_4.png',
+    'alt': '샤워오일 자스민 (바디워시)',
+    'name': '샤워오일 자스민 (바디워시)',
+    'explanation': '자스민의 은은한 꽃향기가 우아하면서도 향긋한 향',
+    'price': '38,000',
+    'size': '300',
+  },
+  {
+    'image': 'images/category_1_5.png',
+    'alt': '리페어 바디크림 그린로즈',
+    'name': '리페어 바디크림 그린로즈',
+    'explanation': '베르가못, 라임의 프레쉬한 시트러스향과 갓 피어난 로즈의 사랑스러운 향',
+    'price': '50,000',
+    'size': '200',
+  },
+  {
+    'image': 'images/category_1_6.png',
+    'alt': '실키바디밀크 머스크',
+    'name': '실키바디밀크',
+    'explanation': '로맨틱한 분위기를 연출해주는 고급스럽고 차분한 향',
+    'price': '50,000',
+    'size': '200',
+  },
+];
+let face_products = [
+  {
+    'image': 'images/category_1_4.png',
+    'alt': '바디스크럽 로즈티',
+    'name': '바디스크럽 로즈티',
+    'explanation': '부드럽고 달콤한 장미로 만든 향긋한 차에서 나는 듯한 포근한 향',
+    'price': '48,000',
+    'size': '320',
+  },
+  {
+    'image': 'images/category_1_3.png',
+    'alt': '바디스크럽 시트러스블라썸',
+    'name': '바디스크럽 시트러스블라썸',
+    'explanation': '화사하게 피어 난 풀향기와 신선한 풀향기의 풋풋한 향기가 조화로운 향',
+    'price': '48,000',
+    'size': '320',
+  },
+  {
+    'image': 'images/category_1_3.png',
+    'alt': '바디스크럽 화이트티',
+    'name': '바디스크럽 화이트티',
+    'explanation': '차밭으로 스며드는 빛처럼 섬세하고 풍부한 향',
+    'price': '70,000',
+    'size': '600',
+  },
+  {
+    'image': 'images/category_1_4.png',
+    'alt': '샤워오일 자스민 (바디워시)',
+    'name': '샤워오일 자스민 (바디워시)',
+    'explanation': '자스민의 은은한 꽃향기가 우아하면서도 향긋한 향',
+    'price': '38,000',
+    'size': '300',
+  },
+  {
+    'image': 'images/category_1_5.png',
+    'alt': '리페어 바디크림 그린로즈',
+    'name': '리페어 바디크림 그린로즈',
+    'explanation': '베르가못, 라임의 프레쉬한 시트러스향과 갓 피어난 로즈의 사랑스러운 향',
+    'price': '50,000',
+    'size': '200',
+  },
+  {
+    'image': 'images/category_1_6.png',
+    'alt': '실키바디밀크 머스크',
+    'name': '실키바디밀크',
+    'explanation': '로맨틱한 분위기를 연출해주는 고급스럽고 차분한 향',
+    'price': '50,000',
+    'size': '200',
+  },
+];
+    let arr = [];
+    arr.push(bath_products, hand_products, hair_products, face_products);
+    console.log(arr)
+
     function product_li(data) {
       let li = `<li>
                   <a href="#">
@@ -537,12 +692,40 @@
     }
 
     lis = ''; 
-    for (let i = 0; i < bath_products.length; i++) {
-      let tmp_li = product_li(bath_products[i]);
-      lis += tmp_li;
+    /* for (let i = 0; i < bath_products.length; i++) {
+      let tmp_li = product_li(arr[0][i]);
+      lis = tmp_li;
       $("#bath_products").append(lis);
-
+    } */
+    for(let j = 0; j < arr.length; j++){
+      for (let i = 0; i < arr[0].length; i++) {
+        let tmp_li = product_li(arr[j][i]);
+        lis = tmp_li;
+        $(".main .category .product section:eq("+ j +") ul").append(lis);
+      }
     }
+
+    let menu = document.querySelectorAll(".main .category .title ul li");
+    let productItem = document.querySelectorAll(".main .category .product section");
+    let id = null, el = null;
+
+    menu.forEach(item => {
+      item.addEventListener("click",(e) => {
+        e.preventDefault()
+        id = e.currentTarget.dataset.id;
+        el = document.getElementById(id);
+        console.log(id)
+        menu.forEach(liItem => {
+          liItem.classList.remove("on");
+        })
+        item.classList.add("on");
+        productItem.forEach(product => {
+          product.classList.remove("on");
+        })
+        el.classList.add("on")
+      })
+    })
+
   </script> 
 </body>
 
