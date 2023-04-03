@@ -539,7 +539,9 @@
     lis = ''; 
     for (let i = 0; i < bath_products.length; i++) {
       let tmp_li = product_li(bath_products[i]);
+      console.log(tmp_li,'tmp_li')
       lis += tmp_li;
+      console.log(lis,'lis')
       $("#bath_product").append(lis);
     }
   </script> 
