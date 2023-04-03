@@ -512,7 +512,7 @@
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
 
-  <script>
+  <script type="text/javascript">
     let bath_products = [
       {
         'image':'images/category_1_6.png',
@@ -539,10 +539,8 @@
     lis = ''; 
     for (let i = 0; i < bath_products.length; i++) {
       let tmp_li = product_li(bath_products[i]);
-      console.log(tmp_li,'tmp_li')
       lis += tmp_li;
-      console.log(lis,'lis')
-      $("#bath_product").append(lis);
+      $("#bath_products").append(lis);
     }
   </script> 
 </body>
